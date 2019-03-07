@@ -1,0 +1,12 @@
+{
+  "name": "logstash-tcp",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "repository": "https://github.com/wangduanduan/logstash-tcp.git",
+  "author": "wangduanduan <1779706607@qq.com>",
+  "license": "MIT",
+  "devDependencies": {},
+  "keywords": [
+    "logstash"
+  ]
+}
