@@ -61,3 +61,26 @@ logstash.send({
   ]
 }
 ```
+
+# logstash.init(options) 全部配置
+
+字段 | 类型 | 默认值 | 说明
+--- | --- | --- | ----
+socketTimeout | int | 10000 | socket超时毫秒数
+port | int | | logstash tcp端口号
+host | string | | | logstash IP地址
+reconnectTimeout | int | 2000 | 发生异常时，多少毫秒后开始重连
+maxReconnectTimes | int | 10 | 最多多少次重连
+logBufferSize | int | 1000 | 当发生异常时，最多缓存多少个待发送的日志。当下次重连成功后，这些日志会再次尝试发送。
+
+# logstash.send(msg)
+
+msg是一个可以被序列化的对象。
+
+```
+logstash.send({
+  key: 'what u want'
+})
+```
+
+
